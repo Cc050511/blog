@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>mkdocs&#39; guidance</title>
+    <link href="/blog/2023/07/23/mkdoc/"/>
+    <url>/blog/2023/07/23/mkdoc/</url>
+    
+    <content type="html"><![CDATA[<h1 id="开始MkDocs"><a href="#开始MkDocs" class="headerlink" title="开始MkDocs"></a>开始MkDocs</h1><h2 id="安装和开始一个新项目"><a href="#安装和开始一个新项目" class="headerlink" title="安装和开始一个新项目"></a>安装和开始一个新项目</h2><p>下述代码依次执行以下操作</p><ul><li>pip安装mkdocs包</li><li>新建项目并进入my-project</li><li>本地8000端口开一个网站用于调试预览</li></ul><p>现在你可以打开<code>http://127.0.0.1:8000/</code>，你将看到默认的主页</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install mkdocs<br>mkdocs new my-project<br><span class="hljs-built_in">cd</span> my-project<br>mkdocs serve<br></code></pre></td></tr></table></figure><p>文件结构</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs applescript"><span class="hljs-keyword">my</span>-project/<br>    docs/<br>        index.md<br>    mkdocs.yml<br></code></pre></td></tr></table></figure><h2 id="添加新页面"><a href="#添加新页面" class="headerlink" title="添加新页面"></a>添加新页面</h2><p>在docs下添加md文件并在mkdocs.yml添加导航  </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl <span class="hljs-string">&#x27;https://jaspervdj.be/lorem-markdownum/markdown.txt&#x27;</span> &gt; docs/about.md<br></code></pre></td></tr></table></figure><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">site_name:</span> <span class="hljs-string">MkLorum</span><br><span class="hljs-attr">site_url:</span> <span class="hljs-string">https://example.com/</span><br><span class="hljs-attr">nav:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">Home:</span> <span class="hljs-string">index.md</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">About:</span> <span class="hljs-string">about.md</span><br></code></pre></td></tr></table></figure><h2 id="构建网站和部署到GitHub"><a href="#构建网站和部署到GitHub" class="headerlink" title="构建网站和部署到GitHub"></a>构建网站和部署到GitHub</h2><p>在mkdocs.yml所在目录初始化git，提交并推送到你的远程仓库<br>下面命令构建并推送site&#x2F;目录到远程的gh-deploy分支，稍等片刻便可以看到你的网页部署成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkdocs build<br>mkdocs gh-deploy<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>tools</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>web</tag>
+      
+      <tag>note</tag>
+      
+      <tag>site</tag>
+      
+      <tag>guide</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>websites-test</title>
     <link href="/blog/2023/07/22/websites-test/"/>
     <url>/blog/2023/07/22/websites-test/</url>
